@@ -1,12 +1,14 @@
 # API_SegurancaUsuarioEfuncionario
-
-Install-Package Microsoft.AspNet.WebApi.Owin
-Install-Package Microsoft.Owin.Host.SystemWeb
-Install-Package Microsoft.Owin.Security.OAuth
-Install-Package Microsoft.Owin.Cors
+<ol>
+<li>Install-Package Microsoft.AspNet.WebApi.Owin</li>
+<li>Install-Package Microsoft.Owin.Host.SystemWeb</li>
+<li>Install-Package Microsoft.Owin.Security.OAuth</li>
+<li>Install-Package Microsoft.Owin.Cors</li>
+</ol>
 
 SQL
-#Funcionario:
+
+- Funcionario:
 - [x] FuncionarioId 
 - [x] string Nome 
 - [x] string Email 
@@ -14,7 +16,7 @@ SQL
 - [x] int Salario 
 - [x] string Setor 
 
-#Usuario:
+- Usuario:
 - [x] Id 
 - [x] string Login 
 - [x] string Senha 
