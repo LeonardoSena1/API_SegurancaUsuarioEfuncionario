@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "98cac0b3-de8f-4ee1-8199-036910edb1f0",
+		"name": "API_seguranca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Funcionario",
+			"item": [
+				{
+					"name": "Recuperar todos os funcionarios",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer u4trqRxIFeXCrCZ7MpZyTPwcqLT33hD7RPhfAw5SAVf_iJtkBGHXK_hOX-Bb4KouiFcXC3aNY0-3jzf-jlJcTb2CnghOIAxSAupXpkCqRfka2iEeuntpKGw1F332B5G064EurOpi4Wf9Ia0EnHmTZ9h0yiuuG2lGZt0oXozBHKpTWYo563gQMLvlhyVzKhKTm4dYK85C3l6d0_IWn58HMWUV2ehytsfd000KjpIQa8w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44379/api/Funcionarios/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44379",
+							"path": [
+								"api",
+								"Funcionarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar Funcionario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer u4trqRxIFeXCrCZ7MpZyTPwcqLT33hD7RPhfAw5SAVf_iJtkBGHXK_hOX-Bb4KouiFcXC3aNY0-3jzf-jlJcTb2CnghOIAxSAupXpkCqRfka2iEeuntpKGw1F332B5G064EurOpi4Wf9Ia0EnHmTZ9h0yiuuG2lGZt0oXozBHKpTWYo563gQMLvlhyVzKhKTm4dYK85C3l6d0_IWn58HMWUV2ehytsfd000KjpIQa8w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nome\":\"teste Leonardo\",\r\n    \"Email\":\"teste@bol.com\",\r\n    \"Sexo\":\"Masculino\",\r\n    \"Salario\": 9999,\r\n    \"Setor\": \"Teste alterado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44379/api/Funcionarios/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44379",
+							"path": [
+								"api",
+								"Funcionarios",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recuperar funcionario com id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer u4trqRxIFeXCrCZ7MpZyTPwcqLT33hD7RPhfAw5SAVf_iJtkBGHXK_hOX-Bb4KouiFcXC3aNY0-3jzf-jlJcTb2CnghOIAxSAupXpkCqRfka2iEeuntpKGw1F332B5G064EurOpi4Wf9Ia0EnHmTZ9h0yiuuG2lGZt0oXozBHKpTWYo563gQMLvlhyVzKhKTm4dYK85C3l6d0_IWn58HMWUV2ehytsfd000KjpIQa8w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44379/api/Funcionarios/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44379",
+							"path": [
+								"api",
+								"Funcionarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar funcionario com id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer u4trqRxIFeXCrCZ7MpZyTPwcqLT33hD7RPhfAw5SAVf_iJtkBGHXK_hOX-Bb4KouiFcXC3aNY0-3jzf-jlJcTb2CnghOIAxSAupXpkCqRfka2iEeuntpKGw1F332B5G064EurOpi4Wf9Ia0EnHmTZ9h0yiuuG2lGZt0oXozBHKpTWYo563gQMLvlhyVzKhKTm4dYK85C3l6d0_IWn58HMWUV2ehytsfd000KjpIQa8w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FuncionarioId\": \"3\",\r\n    \"Nome\": \"teste Leonardo\",\r\n    \"Email\": \"teste@bol.com\",\r\n    \"Sexo\": \"Masculino\",\r\n    \"Salario\": 9999,\r\n    \"Setor\": \"Teste alterado0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44379/api/Funcionarios/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44379",
+							"path": [
+								"api",
+								"Funcionarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer u4trqRxIFeXCrCZ7MpZyTPwcqLT33hD7RPhfAw5SAVf_iJtkBGHXK_hOX-Bb4KouiFcXC3aNY0-3jzf-jlJcTb2CnghOIAxSAupXpkCqRfka2iEeuntpKGw1F332B5G064EurOpi4Wf9Ia0EnHmTZ9h0yiuuG2lGZt0oXozBHKpTWYo563gQMLvlhyVzKhKTm4dYK85C3l6d0_IWn58HMWUV2ehytsfd000KjpIQa8w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44379/api/Funcionarios/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44379",
+							"path": [
+								"api",
+								"Funcionarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44379/token",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44379",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
