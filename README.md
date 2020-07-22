@@ -6,19 +6,17 @@ Install-Package Microsoft.Owin.Security.OAuth
 Install-Package Microsoft.Owin.Cors
 
 SQL
-Funcionario:
+#Funcionario:
+- [x] FuncionarioId 
+- [x] string Nome 
+- [x] string Email 
+- [x] string Sexo 
+- [x] int Salario 
+- [x] string Setor 
 
-FuncionarioId 
-string Nome 
-string Email 
-string Sexo 
-int Salario 
-string Setor 
-
-Usuario:
-
-Id 
-string Login 
-string Senha 
-string Nome 
-int Email 
+#Usuario:
+- [x] Id 
+- [x] string Login 
+- [x] string Senha 
+- [x] string Nome 
+- [x] int Email 
