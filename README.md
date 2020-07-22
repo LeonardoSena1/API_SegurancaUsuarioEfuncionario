@@ -8,9 +8,17 @@ Install-Package Microsoft.Owin.Cors
 SQL
 Funcionario:
 
-*FuncionarioId 
-*string Nome 
-*string Email 
-*string Sexo 
-*int Salario 
-*string Setor 
+FuncionarioId 
+string Nome 
+string Email 
+string Sexo 
+int Salario 
+string Setor 
+
+Usuario:
+
+Id 
+string Login 
+string Senha 
+string Nome 
+int Email 
